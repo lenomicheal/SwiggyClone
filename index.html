@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="info-card" id="greetCard">
+  <span class="info-text">👋 Welcome To swiggyClone,Its not a responcive website <br>
+  Don't Open in mobile or tablet </span>
+  <span class="close-btn" onclick="document.getElementById('greetCard').style.display='none'">&times;</span>
+  </div>
+  <div id="swiggyClonePage" class="swiggyClone-page">
+    <header id="headerId">
+      <img
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
+        alt />
+      <nav>
+        <a href>Swiggy Corporate</a>
+        <a href>Partner with us</a>
+        <button class="btn">Get the app</button>
+        <button class="btn">Sign in</button>
+      </nav>
+    </header>
+
+    <main id="mainContentContainer">
+      <img class="main-img"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
+        alt srcset />
+      <div class="main-content">
+        <h1 style="text-align: center; margin: 15px 0px">
+          Order food & groceries. Discover best restaurants. Swiggy it!
+        </h1>
+        <div style="text-align: center">
+          <input type="text" id="location" placeholder="enter your location" />
+          <input type="text" id="searchFood" placeholder="search foods" />
+        </div>
+
+        <div class="main-cards">
+          <a href>
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png"
+              alt />
+          </a>
+          <a href>
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png"
+              alt />
+          </a>
+          <a href>
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png"
+              alt />
+          </a>
+        </div>
+      </div>
+      <img
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+        class="main-img" alt srcset />
+    </main>
+
+    <section id="foodsCardsContainerId">
+      <div class="food-card-container" style="padding: 30px 0px">
+        <h1 style="font-size: 40px; text-align: center">Menu Card</h1>
+      </div>
+    </section>
+
+    <section id="instamartContainerId">
+      <h2 style="text-align: center">Shop groceries on Instamart</h2>
+
+      <div class="product-section">
+        <div class="arrow left-arrow" onclick="scrollleft()">&#8592;</div>
+
+        <div class="product-list" id="scroll-container">
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a"
+              alt="Fresh Vegetables" />
+            <p>Fresh Vegetables</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/a1493d81-f21e-415f-9875-f78383590fc2_9f3f0f68-4fbe-40f6-8f5d-5472a03469bd"
+              alt="Fresh Fruits" />
+            <p>Fresh Fruits</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/6dea6676-ce07-45e6-b60c-a099c01c5462_6d33297a-5828-48ff-aa2a-c052ae97669e"
+              alt="Dairy, Bread and Eggs" />
+            <p>Dairy, Bread and Eggs</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/097900ca-5d2d-4bb0-8e54-aede1e58dfd8_eab3796c-ac17-48fd-bfc7-6356c6f89783"
+              alt="Rice, Atta and Dals" />
+            <p>Rice, Atta and Dals</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/64714677-e6b6-41c1-b533-6644d43e55f7_76ef86af-0483-41a5-8387-37901bf4ca6a"
+              alt="Masalas and Dry Fruits" />
+            <p>Masalas and Dry Fruits</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/8e48ee13-3b51-49ea-b765-5cf3e7a97c04_695caa8a-c2f6-4a1a-9672-53213fea21aa"
+              alt="Oils and Ghee" />
+            <p>Oils and Ghee</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/73e018a7-d342-475e-aaca-ec5cd3d0c59f_228ff3d4-ff21-44db-9768-7a369c65ce6a"
+              alt="Munchies" />
+            <p>Munchies</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/83a9b71b-1db7-4cbe-a9f7-ead650d26326_3afbe8c8-f5c8-4dd7-8357-f5711f80646b"
+              alt="Sweet Tooth" />
+            <p>Sweet Tooth</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/37d399b1-52d2-47ef-bdd8-8951e51819fc_0361a93d-e864-49be-a57d-46c958eb7b56"
+              alt="Cold Drinks and Juices" />
+            <p>Cold Drinks and Juices</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/76a7104c-0f11-4182-aa51-0d48efc2be7f_aae098f9-aaff-4504-a222-bf13595d58cd"
+              alt="Biscuits and Cakes" />
+            <p>Biscuits and Cakes</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/1a08f110-17b6-4785-92d4-404825b75f2d_869c1986-d9c1-4d46-b1c3-10c79a052a59"
+              alt="Instant and Frozen Food" />
+            <p>Instant and Frozen Food</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/25be4b2d-a9de-495e-a9a4-9a6d6a3d13c0_5f571281-eef0-4820-9982-d8bdd9af91c6"
+              alt="Meat and Seafood" />
+            <p>Meat and Seafood</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/012beae1-c31a-4360-9b32-173080b64652_aa07a04e-5f2e-4c00-86f6-297344906f01"
+              alt="Cereals and Breakfast" />
+            <p>Cereals and Breakfast</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/e2f96940-2657-4a4b-a5e1-0c3413ba25cb_8b977351-a415-442a-bb9c-320e1642f740"
+              alt="Sauces and Spreads" />
+            <p>Sauces and Spreads</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/5fc3d15a-26b0-41e0-93ab-39ada0f553c2_82e0ff9f-558c-45dd-af3e-fdc16d0aa471"
+              alt="Tea, Coffee and More" />
+            <p>Tea, Coffee and More</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/73a47bc4-c684-447f-9908-22da3ecd3ba2_c9948a61-3dca-4e29-82b4-31178d38746b"
+              alt="Cleaning Essentials" />
+            <p>Cleaning Essentials</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/fc74f557-a203-4dba-8955-82d6c608e91e_7d2481f0-8614-400c-b25c-554a655c14c7"
+              alt="Pharma and Hygiene" />
+            <p>Pharma and Hygiene</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/4342c814-6ff9-4bbe-a360-95200ad602a0_1905dc17-a04d-4a9e-9a4e-adde9b27f321"
+              alt="Bath, Body and Hair" />
+            <p>Bath, Body and Hair</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/3/25/1eae2df9-95a5-40e5-a2c0-92bb4893637a_5e1e6c72-dde5-4a12-8bdf-c7cbc4b0644b"
+              alt="Paan Corner" />
+            <p>Paan Corner</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/657a922d-067a-4e0b-b967-b3e0c7906fa9_485311db-2f22-4193-a05d-963f18a89150"
+              alt="Home and Kitchen" />
+            <p>Home and Kitchen</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/52a66c89-6516-489f-96ac-b15286900648_ebbfd2d1-9b36-4ce3-b08c-7378f1ca6d7d"
+              alt="Office and Electricals" />
+            <p>Office and Electricals</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/cbbab04b-845a-44bd-aa63-329276af1714_c6c9dc53-ae50-475a-89d8-b03824c4a98a"
+              alt="Baby Care" />
+            <p>Baby Care</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/705173ff-7cd9-4d7e-9e5b-3886d81411b9_bb324827-9556-48e4-b8f6-280706478fe2"
+              alt="Pet Supplies" />
+            <p>Pet Supplies</p>
+          </div>
+          <div class="product">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/e160e4c4-2114-4e3d-97ff-3922125a3b2e_224bcfa1-77e3-47e5-aea5-1ab060585b4b"
+              alt="Beauty and Grooming" />
+            <p>Beauty and Grooming</p>
+          </div>
+
+          <div class="product">
+            <img height="160px" width="120px"
+              src="https://i0.wp.com/promptnutrition.com/wp-content/uploads/2024/01/img_1325.jpeg?fit=457%2C671&ssl=1"
+              alt="Beauty and Grooming" />
+            <p>Whey Protain</p>
+          </div>
+        </div>
+
+        <div class="arrow right-arrow" onclick="scrollRight()">&#8594;</div>
+      </div>
+    </section>
+
+    <section class="restaurants-card-container">
+      <h1 style="text-align: center;">Restaurants to explore</h1>
+      <div class="product-section" style="max-width: 1000px;">
+        <div class="arrow left-arrow" onclick="scrollleft1()">&#8594;</div>
+
+        <div class="restaurent-lists product-list" id="scroll-container1">
+          <div class="restaurent">
+            <img
+              src="https://images.pexels.com/photos/239975/pexels-photo-239975.jpeg?_gl=1*1d5u03d*_ga*OTMzODA1OTA3LjE3MzkxNjkwNzE.*_ga_8JE65Q40S6*czE3NTI5MDA2NjAkbzEwJGcxJHQxNzUyOTAwNzk0JGo2MCRsMCRoMA.."
+              alt="" srcset="">
+            <div class="restaurant-info">
+              <div style="margin: 0px 0px;">
+                <h3>Rio cafe &nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &#8377;200</h3>
+                <h3>killpauk,chennai&nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  6.1 Km
+                </h3>
+              </div>
+              <div style="margin: 10px 0px;">
+                <span class="res-features" style="margin-right: 15px;">Table Booking</span>
+                <span class="res-features">Free Mocktai</span>
+              </div>
+              <button class="offer-btn1">flat 15% off on pre-booking</button>
+              <button class="offer-btn2">Upto 10% off with bank offers</button>
+
+            </div>
+          </div>
+
+          <div class="restaurent">
+            <img
+              src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?_gl=1*1dg0ipk*_ga*OTMzODA1OTA3LjE3MzkxNjkwNzE.*_ga_8JE65Q40S6*czE3NTI5MDA2NjAkbzEwJGcxJHQxNzUyOTAwNzI2JGo1OSRsMCRoMA.."
+              alt="" srcset="">
+            <div class="restaurant-info">
+              <div style="margin: px 0px;">
+                <h3>Esther Cafetaria &nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &#8377;200</h3>
+                <h3>killpauk,chennai&nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  6.1 Km
+                </h3>
+              </div>
+              <div style="margin: 10px 0px;">
+                <span class="res-features" style="margin-right: 15px;">Table Booking</span>
+                <span class="res-features">Free Mocktai</span>
+              </div>
+              <button class="offer-btn1">flat 15% off on pre-booking</button>
+              <button class="offer-btn2">Upto 10% off with bank offers</button>
+
+            </div>
+          </div>
+
+          <div class="restaurent">
+            <img
+              src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?_gl=1*1sh4sz9*_ga*OTMzODA1OTA3LjE3MzkxNjkwNzE.*_ga_8JE65Q40S6*czE3NTI5MDA2NjAkbzEwJGcxJHQxNzUyOTAwNzUwJGozNSRsMCRoMA.."
+              alt="" srcset="">
+            <div class="restaurant-info">
+              <div style="margin: px 0px;">
+                <h3>Hotal Heritage &nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;
+                  &nbsp; &nbsp; &#8377;200</h3>
+                <h3>St.Joseph road,Bangolore&nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp;
+                  6.1 Km
+                </h3>
+              </div>
+              <div style="margin: 10px 0px;">
+                <span class="res-features" style="margin-right: 15px;">Table Booking</span>
+                <span class="res-features">Free Mocktai</span>
+              </div>
+              <button class="offer-btn1">flat 15% off on pre-booking</button>
+              <button class="offer-btn2">Upto 10% off with bank offers</button>
+
+            </div>
+          </div>
+
+          <div class="restaurent">
+            <img
+              src="https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?_gl=1*im8z7i*_ga*OTMzODA1OTA3LjE3MzkxNjkwNzE.*_ga_8JE65Q40S6*czE3NTI5MDA2NjAkbzEwJGcxJHQxNzUyOTAwNzY0JGoyMSRsMCRoMA.."
+              alt="" srcset="">
+            <div class="restaurant-info">
+              <div style="margin: px 0px;">
+                <h3>Royal cacino &nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &#8377;200</h3>
+                <h3>Marina chennai &nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;
+                  6.1 Km
+                </h3>
+              </div>
+              <div style="margin: 10px 0px;">
+                <span class="res-features" style="margin-right: 15px;">Table Booking</span>
+                <span class="res-features">Free Mocktai</span>
+              </div>
+              <button class="offer-btn1">flat 15% off on pre-booking</button>
+              <button class="offer-btn2">Upto 10% off with bank offers</button>
+
+            </div>
+          </div>
+
+
+          <div class="restaurent">
+            <img
+              src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?_gl=1*gmx4ma*_ga*OTMzODA1OTA3LjE3MzkxNjkwNzE.*_ga_8JE65Q40S6*czE3NTI5MDA2NjAkbzEwJGcxJHQxNzUyOTAwNzA2JGoxNCRsMCRoMA.."
+              alt="" srcset="">
+            <div class="restaurant-info">
+              <div style="margin: px 0px;">
+                <h3>Leo pub &nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &#8377;200</h3>
+                <h3>Roundsquare,Banguluru&nbsp; &nbsp;&nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  6.1 Km
+                </h3>
+              </div>
+              <div style="margin: 10px 0px;">
+                <span class="res-features" style="margin-right: 15px;">Table Booking</span>
+                <span class="res-features">Free Mocktai</span>
+              </div>
+              <button class="offer-btn1">flat 15% off on pre-booking</button>
+              <button class="offer-btn2">Upto 10% off with bank offers</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow right-arrow" onclick="scrollRight1()">&#8594;</div>
+
+      </div>
+    </section>
+
+    <section class="banner">
+      <img style="height: 250px; width: 100vw;"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png"
+        alt="" srcset="">
+    </section>
+
+    <footer class="footer1">
+      <figure>
+        <img src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg" alt="" srcset="">
+        <figcaption class="mainList">© 2025 Swiggy Limited</figcaption>
+      </figure>
+
+      <div>
+        <ul style="list-style-type: none;">
+          <li class="mainList">Company</li>
+
+          <li class="subList"><a href="#">About us</a></li>
+          <li class="subList"><a href="#">Swiggy <br>Corporate</a></li>
+          <li class="subList"><a href="#">Careers</a></li>
+          <li class="subList"><a href="#">Team</a></li>
+          <li class="subList"><a href="#">Swiggy One</a></li>
+          <li class="subList"><a href="#">Swiggy <br>Instamart</a></li>
+          <li class="subList"><a href="#">Minis</a></li>
+          <li class="subList"><a href="#">Pyng</a></li>
+
+        </ul>
+      </div>
+
+      <div>
+        <ul style="list-style-type: none;">
+          <li class="mainList">Contact us</li>
+          <li class="subList"><a href="#">Help & <br> Support</a></li>
+          <li class="subList"><a href="#">Partner<br>with us</a></li>
+          <li class="subList"><a href="#">Ride with us</a></li>
+
+          <br><br>
+
+          <li class="mainList">Legal</li>
+          <li class="subList"><a href="#">Terms & <br> Conditions</a></li>
+          <li class="subList"><a href="#">Cookie Policy</a></li>
+          <li class="subList"><a href="#">Privacy Policy</a></li>
+
+        </ul>
+      </div>
+
+      <div>
+        <ul style="list-style-type: none;">
+          <li class="mainList">Available in:</li>
+          <li class="subList"><a href="#">Madurai</a></li>
+          <li class="subList"><a href="#">Chennai</a></li>
+          <li class="subList"><a href="#">Bangaloru</a></li>
+          <li class="subList"><a href="#">Mumbai</a></li>
+          <li class="subList"><a href="#">Cochin</a></li>
+          <li class="subList"><a href="#">Hyderabad</a></li>
+
+        </ul>
+      </div>
+
+
+
+      <div>
+        <ul style="list-style-type: none;">
+          <li class="mainList">Life at Swiggy</li>
+          <li class="subList"><a href="#">Explore with Swiggy</a></li>
+          <li class="subList"><a href="#">Snackables</a></li>
+        </ul>
+      </div>
+
+
+    </footer>
+
+  </div>
+
+  <!-- script tag linking  -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-card{
+   
+    text-align: center;
+    padding: 10px;
+}
+
+.close-btn{
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+
+
+.swiggyClone-page {
+    background-color: rgb(252, 75, 5);
+    height: 105vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+header button {
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-img {
+    height: 500px;
+    width: 250px;
+
+}
+
+
+.main-content {
+    align-self: start;
+    padding: 40px 0px;
+}
+
+.main-content input {
+    height: 30px;
+    padding: 10px;
+    margin: 1em;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.main-cards {
+    display: flex;
+    justify-content: left;
+}
+
+
+.main-cards img {
+    height: 230px;
+    width: 240px;
+}
+
+
+#foodsCardsId {
+    background-color: #fff;
+    height: auto;
+}
+
+.foodCard {
+    padding: 10px;
+}
+
+
+.row {
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row img {
+    height: 150px;
+}
+
+
+.product-section {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.product {
+    flex: 0 0 auto;
+    width: 140px;
+    text-align: center;
+    padding: 0px;
+    margin: 0 10px;
+    transform: translate(10px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product:hover{
+    transition: ease-in 10;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+
+.restaurants-card-container{
+    height: 100vh;
+    padding: 30px 0px;
+    background-color: rgb(221, 221, 221);
+}
+
+.restaurent-lists{
+    display: flex;
+}
+
+.restaurent{
+    flex: 1 1 auto;
+    height: auto;
+    width: 18em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.restaurent img{
+    height: 10em;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.restaurent .restaurant-info{
+    padding: 13px;
+}
+
+.restaurant-info h3{
+   font-size: 13px;
+   font-weight: 100;
+}
+
+.restaurant-info .offer-btn1{
+    font-size: 13px;
+    font-weight: 100;
+    background-color: #0B9B61;
+    color: white;
+    margin: 5px;
+    border: 0;
+    border-radius: 10px;
+    height: 30px;
+    width: 19em;
+    
+}
+
+
+.restaurant-info .offer-btn2{
+    font-size: 13px;
+    font-weight: 100;
+    background-color: #C4F1D4 ;
+    color: #0B9B61 ;
+    margin: 5px;
+    border: 0;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    width: 19em;
+    
+}
+
+.restaurant-info span{
+    font-size: 10px;
+    font-weight: 100;
+    color: rgb(85, 84, 84);
+    background-color: rgb(192, 192, 194);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+footer{
+    background-color: #F1F1F7;
+    height: auto;
+}
+
+.mainList,.subList{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.footer1 div{
+    margin: 20px;
+}
+
+figure{
+    margin: 20px;
+}
+.mainList{
+    font-weight: bold;
+    
+}
+.subList{
+    font-weight: lighter;
+}
+
+.subList a{
+    text-decoration: none;
+    color: #565656;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
