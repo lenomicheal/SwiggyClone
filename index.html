@@ -10,23 +10,49 @@
   <link rel="stylesheet" href="index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
 </head>
+<style>
+  @media screen and (min-width:320px)
+  and (max-width:950px){
+    #headerId nav a{
+      display: none;
+    }
 
+    #headerId .btn-get{
+      display: none;
+    }
+
+    #headerId {
+      display: flex;
+      gap: 30px;
+      justify-content: space-around;
+    }
+
+    #mainContentContainer .main-img{
+      display: none;
+    }
+
+    .main-cards{
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+</style>
 <body>
-  <div class="info-card" id="greetCard">
+  <!-- <div class="info-card" id="greetCard">
     <span class="info-text">👋 Welcome To swiggyClone,Its not a responcive website <br>
       Don't Open in mobile or tablet </span>
     <span class="close-btn" onclick="document.getElementById('greetCard').style.display='none'">&times;</span>
-  </div>
+  </div> -->
   <div id="swiggyClonePage" class="swiggyClone-page">
-    <section>
+    <section class="hero-section-page">
       <header id="headerId">
         <img
           src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
           alt />
         <nav>
-          <a href>Swiggy Corporate</a>
-          <a href>Partner with us</a>
-          <button class="btn">Get the app</button>
+          <a href="">Swiggy Corporate</a>
+          <a href="">Partner with us</a>
+          <button class="btn btn-get">Get the app</button>
           <button class="btn">Sign in</button>
         </nav>
       </header>
@@ -70,7 +96,7 @@
 
     <section id="foodsCardsContainerId">
       <div class="food-card-container" style="padding: 30px 0px">
-        <h1 style="font-size: 40px; text-align: center">Menu Card</h1>
+      <h2 style="text-align: center">Menu Card</h2>
       </div>
     </section>
 
@@ -449,7 +475,45 @@
     
 
   </div>
+  <!-- <div style="background-color: rgb(84, 147, 147);width: 100%; height: 100vh; position: relative; display: flex;justify-content: center; align-items: center;">
+   <div style="display: flex; gap: 30px; justify-content: center; max-width: 900px; overflow-x: auto; scroll-behavior: smooth;">
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
 
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+     <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+     <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+
+    <div class="card" style="background-color: rgb(26, 131, 47); height: 400px;width:300px;">
+        <h1 style="color: black;">Heloo worldl</h1>
+    </div>
+  </div>
+ </div> -->
   <!-- script tag linking  -->
   <script src="script.js"></script>
 </body>
