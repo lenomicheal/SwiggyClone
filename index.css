@@ -17,9 +17,9 @@
 }
 
 
-.swiggyClone-page {
+.hero-section-page{
     background-color: rgb(252, 75, 5);
-    height: 105vh;
+    height: auto;
     width: 100vw;
 }
 
@@ -78,7 +78,8 @@ main {
 
 .main-cards {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    
 }
 
 
@@ -170,7 +171,7 @@ main {
 
 
 .restaurants-card-container{
-    height: 100vh;
+    height: auto;
     padding: 30px 0px;
     background-color: rgb(221, 221, 221);
 }
@@ -257,6 +258,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 30px 0px;
+    flex-wrap: wrap;
 }
 
 .footer1 div{
@@ -280,4 +282,13 @@ figure{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
     font-weight: 600;
+}
+
+
+
+.card{
+    position: relative;
+    flex:0 0 auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
